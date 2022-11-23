@@ -56,12 +56,7 @@
 
         <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
 
-        <Button Style="{DynamicResource RoundedButton}"  
-                    Height="76"
-                    Width="252"
-                    Margin="950,-1020,0,0"
-                    Content="Order"
-                    FontSize="50"/>
+        
 
 
 
