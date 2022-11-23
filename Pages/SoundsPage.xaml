@@ -5,10 +5,60 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CoffeShop.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="850" d:DesignWidth="1490"
       Title="SoundsPage">
 
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <Label Content="Sounds" Foreground="Black" FontSize="50" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+
+        <StackPanel>
+            <Image Source="\Assets\Images\LogIm.png"
+                   Width="494"
+                   Height="850"
+                   Margin="999,0,0,0"/>
+
+            <StackPanel>
+
+                <TextBlock Text="Tell us about you"
+                           FontSize="64"
+                           Margin="-500,-700,0,0"
+                           HorizontalAlignment="Center"
+                           Style="{DynamicResource TittleText}"/>
+
+                <TextBlock Text="Your name"
+                           FontSize="32"
+                           Margin="170,-600,0,0"
+                           HorizontalAlignment="Left"
+                           Style="{DynamicResource NormalText}"/>
+
+                <TextBox Margin="-450,-1010,0,0"
+                         Width="709"
+                         Height="78"/>
+
+                <TextBlock Text="Phone Number"
+                           FontSize="32"
+                           Margin="170,-450,0,0"
+                           HorizontalAlignment="Left"
+                           Style="{DynamicResource NormalText}"/>
+
+                <TextBox Margin="-450,-710,0,0"
+                         Width="709"
+                         Height="78"/>
+
+
+                <Button
+                    Style="{DynamicResource RoundedButton}"
+                    Width="252"
+                    Height="76"
+                    Content="Order"
+                    
+                    Margin="-450,-350,0,0"/>
+
+
+            </StackPanel>
+
+        </StackPanel>
+
+       
     </Border>
 </Page>

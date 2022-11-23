@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CoffeShop.Pages;
 
 namespace CoffeShop.Pages
 {
@@ -24,5 +25,7 @@ namespace CoffeShop.Pages
         {
             InitializeComponent();
         }
+
+        
     }
 }

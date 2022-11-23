@@ -5,65 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CoffeShop.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="815" d:DesignWidth="1490"
+      d:DesignHeight="850" d:DesignWidth="1490"
       Title="HomePage">
-    <Page.Resources>
-        <Style x:Key="FocusVisual">
-            <Setter Property="Control.Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
-        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
-        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
-        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
-        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
-        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
-        <Style x:Key="RoundedButton" TargetType="{x:Type Button}">
-            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
-            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
-            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
-            <Setter Property="VerticalContentAlignment" Value="Center"/>
-            <Setter Property="Padding" Value="0"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="15" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsDefaulted" Value="true">
-                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                            </Trigger>
-                            <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="false">
-                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
-                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Page.Resources>
+  
 
     <StackPanel Background="White">
 
@@ -77,8 +21,8 @@
         </Image>
 
         <Image Width="726"
-                   Height="515"
-                   Margin="-1565,20,0,0">
+                   Height="505.1"
+                   Margin="-1555,65,0,0">
 
             <Image.Source>
                 <BitmapImage UriSource="\Assets\Images\kopi_2.png"/>
@@ -99,24 +43,28 @@
                      TextAlignment="Center"
                      Text="ORDER"
                      FontSize="128"
-                     Background="Transparent"/>
+                     Background="Transparent"
+                   Style="{DynamicResource TittleText}"/>
 
         <TextBlock VerticalAlignment="Center" 
                      Margin="13,-1390,0,0"
                      TextAlignment="Center"
                      Text="YOUR HAPPINES HERE"
                      FontSize="40"
-                     Background="Transparent"/>
+                     Background="Transparent"
+                   Style="{DynamicResource NormalText}"/>
 
-        <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryBlueColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
+        <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
 
-        <Button Style="{DynamicResource RoundedButton}"  Height="76"
+        <Button Style="{DynamicResource RoundedButton}"  
+                    Height="76"
                     Width="252"
                     Margin="950,-1020,0,0"
                     Content="Order"
-                    FontSize="50"
-                    Background="{DynamicResource PrimaryBlueColor}"
-                    Foreground="White" />
+                    FontSize="50"/>
+
+
+
 
     </StackPanel>
 

@@ -78,5 +78,9 @@ namespace CoffeShop
             PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
+        private void PagesNavigation_Navigated_1(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

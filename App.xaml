@@ -14,5 +14,10 @@
                 <ResourceDictionary Source="Styles/MainStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+
+
+       
+        
+        
     </Application.Resources>
 </Application>
