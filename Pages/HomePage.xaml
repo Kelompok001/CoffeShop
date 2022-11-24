@@ -7,73 +7,13 @@
       mc:Ignorable="d" 
       d:DesignHeight="850" d:DesignWidth="1490"
       Title="HomePage">
-  
-
-    <StackPanel Background="White">
-
-        <Image Width="726"
-                   Height="517"
-                   Margin="1100,-135,0,0">
-
-            <Image.Source>
-                <BitmapImage UriSource="\Assets\Images\kopi_1.png"/>
-            </Image.Source>
-        </Image>
-
-        <Image Width="726"
-                   Height="505.1"
-                   Margin="-1555,65,0,0">
-
-            <Image.Source>
-                <BitmapImage UriSource="\Assets\Images\kopi_2.png"/>
-            </Image.Source>
-        </Image>
-
-        <Image Width="621"
-                   Height="621"
-                   Margin="0,-740,20,0">
-
-            <Image.Source>
-                <BitmapImage UriSource="\Assets\Images\barista.png"/>
-            </Image.Source>
-        </Image>
-
-        <TextBlock VerticalAlignment="Center" 
-                     Margin="0,-1550,0,0"
-                     TextAlignment="Center"
-                     Text="ORDER"
-                     FontSize="128"
-                     Background="Transparent"
-                   Style="{DynamicResource TittleText}"/>
-
-        <TextBlock VerticalAlignment="Center" 
-                     Margin="13,-1390,0,0"
-                     TextAlignment="Center"
-                     Text="YOUR HAPPINES HERE"
-                     FontSize="40"
-                     Background="Transparent"
-                   Style="{DynamicResource NormalText}"/>
-
-        <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
 
 
-        <Button
-                    Style="{DynamicResource RoundedButton}"
-                    Width="252"
-                    Height="76"
-                    Content="Order"
-                    Margin="750,-1050,0,0" Click="OrderClick"/>
 
-        <Frame x:Name="Main"
-                Width="1500"
-                Height="950"
-                Margin="0,-1050,0,0">
-            
-        </Frame>
 
-    </StackPanel>
+    <StackPanel Background="White"/>
 
-    
+
 
 
 

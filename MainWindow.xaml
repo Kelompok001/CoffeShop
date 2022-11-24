@@ -18,61 +18,63 @@
 
 
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <!-- Start: GridColum Left-->
-            <Border CornerRadius="8 0 0 8" Background="{DynamicResource SecundaryBackgroundColor}" >
-                <Grid x:Name="gridMenu" Width="60">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
+        <StackPanel Background="White">
 
-                    <!-- Logo -->
-                    <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
-                        <Path Data="{DynamicResource Logo}" Margin="16 0 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="25" Height="25" HorizontalAlignment="Left"/>
-                        <Label Content="Roasted" Foreground="{DynamicResource PrimaryColor}" FontWeight="Bold" FontSize="20" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="14 0 0 0"/>
-                    </StackPanel>
+            <Image Width="726"
+                   Height="517"
+                   Margin="1100,-135,0,0">
 
-                    <!-- Menu -->
-                    <ToggleButton x:Name="btnMenu"  HorizontalAlignment="Right" BorderThickness="0" Background="Transparent" VerticalAlignment="Center" Style="{StaticResource MenuIconStyle}" Margin="0 0 15 0">
-                        <ToggleButton.Triggers>
-                            <EventTrigger RoutedEvent="ToggleButton.Unchecked">
-                                <BeginStoryboard>
-                                    <Storyboard x:Name="HideStackPanel">
-                                        <DoubleAnimation Storyboard.TargetName="gridMenu" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="200" To="60" Duration="0:0:0.3">
-                                        </DoubleAnimation>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                            <EventTrigger RoutedEvent="ToggleButton.Checked">
-                                <BeginStoryboard>
-                                    <Storyboard x:Name="ShowStackPanel">
-                                        <DoubleAnimation Storyboard.TargetName="gridMenu" Storyboard.TargetProperty="Width" BeginTime="0:0:0" From="60" To="200" Duration="0:0:0.3">
-                                        </DoubleAnimation>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger>
-                        </ToggleButton.Triggers>
-                    </ToggleButton>
+                <Image.Source>
+                    <BitmapImage UriSource="\Assets\Images\kopi_1.png"/>
+                </Image.Source>
+            </Image>
 
-                    <StackPanel Grid.Row="3">
-                        <RadioButton x:Name="rdHome" IsChecked="True" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}" Click="rdHome_Click" Checked="rdHome_Checked"/>
-                        <RadioButton x:Name="rdSounds" Content="Sounds" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource headphones}" Margin="0 5 0 5" Click="rdSounds_Click"/>
-                        <RadioButton x:Name="rdNotes" Content="Notes" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource notes}" Click="rdNotes_Click"/>
-                        <RadioButton x:Name="rdPayment" Content="Payment" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource payment}" Margin="0 5 0 5" Click="rdPayment_Click"/>
-                    </StackPanel>
-                </Grid>
-            </Border>
-            <!-- End: GridColum Left-->
+            <Image Width="726"
+                   Height="505.1"
+                   Margin="-1555,65,0,0">
+
+                <Image.Source>
+                    <BitmapImage UriSource="\Assets\Images\kopi_2.png"/>
+                </Image.Source>
+            </Image>
+
+            <Image Width="621"
+                   Height="621"
+                   Margin="0,-740,20,0">
+
+                <Image.Source>
+                    <BitmapImage UriSource="\Assets\Images\barista.png"/>
+                </Image.Source>
+            </Image>
+
+            <TextBlock VerticalAlignment="Center" 
+                     Margin="0,-1550,0,0"
+                     TextAlignment="Center"
+                     Text="ORDER"
+                     FontSize="128"
+                     Background="Transparent"
+                   Style="{DynamicResource TittleText}"/>
+
+            <TextBlock VerticalAlignment="Center" 
+                     Margin="13,-1390,0,0"
+                     TextAlignment="Center"
+                     Text="YOUR HAPPINES HERE"
+                     FontSize="40"
+                     Background="Transparent"
+                   Style="{DynamicResource NormalText}"/>
+
+            <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
+
+
+            <Button
+                    Style="{DynamicResource RoundedButton}"
+                    Width="252"
+                    Height="78"
+                    Content="Order"
+                    Margin="750,-1050,0,0" Click="OrderClick"/>
 
             <!-- Start: Button Close | Restore | Minimize -->
-            <StackPanel Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
+            <StackPanel Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-930,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
                 <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"  />
                 <Button x:Name="btnRestore" Margin="5,0" Click="btnRestore_Click">
                     <Button.Style>
@@ -90,27 +92,16 @@
             </StackPanel>
             <!-- End: Button Close | Restore | Minimize -->
 
-            <!-- Start: GridColumn Rigth -->
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+            <Frame x:Name="Main"
+                Width="1550"
+                Height="950"
+                Margin="0,-1050,0,0">
 
-                <Border Grid.RowSpan="2">
+            </Frame>
 
-                                       
-                    <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" Navigated="PagesNavigation_Navigated_1">
-                        <!-- Page Content -->
-                        
-                    </Frame>
-                    
-                </Border>
-            </Grid>
-            <!-- Start: GridColumn Rigth -->
-        </Grid>
+        </StackPanel>
 
-       
+
 
 
 

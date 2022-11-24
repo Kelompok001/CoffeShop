@@ -24,5 +24,10 @@ namespace CoffeShop.Pages
         {
             InitializeComponent();
         }
+
+        private void MakeOrder(object sender, RoutedEventArgs e)
+        {
+            Nav.Content = new HomePage();
+        }
     }
 }

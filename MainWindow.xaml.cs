@@ -26,6 +26,12 @@ namespace CoffeShop
             InitializeComponent();
         }
 
+
+        private void OrderClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new SoundsPage();
+        }
+
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -44,43 +50,5 @@ namespace CoffeShop
             WindowState = WindowState.Minimized;
         }
 
-        
-
-        private void PagesNavigation_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
-
-        private void rdHome_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void rdHome_Click(object sender, RoutedEventArgs e)
-        {
-            // PagesNavigation.Navigate(new HomePage());
-
-            PagesNavigation.Navigate(new System.Uri("Pages/HomePage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void rdSounds_Click(object sender, RoutedEventArgs e)
-        {
-            PagesNavigation.Navigate(new System.Uri("Pages/SoundsPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void rdNotes_Click(object sender, RoutedEventArgs e)
-        {
-            PagesNavigation.Navigate(new System.Uri("Pages/NotesPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void rdPayment_Click(object sender, RoutedEventArgs e)
-        {
-            PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void PagesNavigation_Navigated_1(object sender, NavigationEventArgs e)
-        {
-
-        }
     }
 }

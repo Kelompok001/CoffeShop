@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CoffeShop.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="850" d:DesignWidth="1490"
+      d:DesignHeight="950" d:DesignWidth="1550"
       Title="SoundsPage">
 
     <Border CornerRadius="5" Background="{DynamicResource PrimaryBackgroundColor}">
@@ -14,36 +14,36 @@
         <StackPanel>
 
             <Image Source="\Assets\Images\LogIm.png" 
-                   Height="943" 
-                   Width="558"
-                   Margin="950,-10,0,0"/>
+                   Height="1148"
+                   Width="658"
+                   Margin="990,-80,0,0"/>
 
             <StackPanel Margin="-50,-50,0,0">
 
                 <TextBlock Text="Tell us about you"
                            FontSize="64"
-                           Margin="-500,-700,0,0"
+                           Margin="-500,-800,0,0"
                            HorizontalAlignment="Center"
                            Style="{DynamicResource TittleText}"/>
 
                 <TextBlock Text="Your name"
                            FontSize="32"
-                           Margin="190,-600,0,0"
+                           Margin="220,-700,0,0"
                            HorizontalAlignment="Left"
                            Style="{DynamicResource NormalText}"/>
 
-                <TextBox Margin="-450,-1010,0,0"
+                <TextBox Margin="-450,-1210,0,0"
                          Width="709"
                          Height="78"
                          Style="{DynamicResource TextBoxR}"/>
 
                 <TextBlock Text="Phone Number"
                            FontSize="32"
-                           Margin="190,-450,0,0"
+                           Margin="220,-550,0,0"
                            HorizontalAlignment="Left"
                            Style="{DynamicResource NormalText}"/>
 
-                <TextBox Margin="-450,-710,0,0"
+                <TextBox Margin="-450,-910,0,0"
                          Width="709"
                          Height="78"
                          Style="{DynamicResource TextBoxR}"/>
@@ -54,7 +54,14 @@
                     Width="552"
                     Height="76"
                     Content="Make Order"
-                    Margin="-485,-400,0,0"/>
+                    Margin="-485,-600,0,0" Click="MakeOrder"/>
+
+                <Frame x:Name="Nav"
+                        Width="1550"
+                        Height="950"
+                        Margin="50,-1080,0,0">
+                    
+                </Frame>
 
 
             </StackPanel>
