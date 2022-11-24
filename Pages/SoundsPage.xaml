@@ -8,16 +8,17 @@
       d:DesignHeight="850" d:DesignWidth="1490"
       Title="SoundsPage">
 
-    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+    <Border CornerRadius="5" Background="{DynamicResource PrimaryBackgroundColor}">
 
 
         <StackPanel>
-            <Image Source="\Assets\Images\LogIm.png"
-                   Width="494"
-                   Height="850"
-                   Margin="999,0,0,0"/>
 
-            <StackPanel>
+            <Image Source="\Assets\Images\LogIm.png" 
+                   Height="943" 
+                   Width="558"
+                   Margin="950,-10,0,0"/>
+
+            <StackPanel Margin="-50,-50,0,0">
 
                 <TextBlock Text="Tell us about you"
                            FontSize="64"
@@ -27,38 +28,39 @@
 
                 <TextBlock Text="Your name"
                            FontSize="32"
-                           Margin="170,-600,0,0"
+                           Margin="190,-600,0,0"
                            HorizontalAlignment="Left"
                            Style="{DynamicResource NormalText}"/>
 
                 <TextBox Margin="-450,-1010,0,0"
                          Width="709"
-                         Height="78"/>
+                         Height="78"
+                         Style="{DynamicResource TextBoxR}"/>
 
                 <TextBlock Text="Phone Number"
                            FontSize="32"
-                           Margin="170,-450,0,0"
+                           Margin="190,-450,0,0"
                            HorizontalAlignment="Left"
                            Style="{DynamicResource NormalText}"/>
 
                 <TextBox Margin="-450,-710,0,0"
                          Width="709"
-                         Height="78"/>
+                         Height="78"
+                         Style="{DynamicResource TextBoxR}"/>
 
 
                 <Button
                     Style="{DynamicResource RoundedButton}"
-                    Width="252"
+                    Width="552"
                     Height="76"
-                    Content="Order"
-                    
-                    Margin="-450,-350,0,0"/>
+                    Content="Make Order"
+                    Margin="-485,-400,0,0"/>
 
 
             </StackPanel>
 
         </StackPanel>
 
-       
+
     </Border>
 </Page>

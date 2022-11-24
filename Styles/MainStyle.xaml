@@ -4,7 +4,7 @@
     
     <!-- Start: Button | Minimize | Maximize | Close -->
     <Style x:Key="IconButtonsStyle" TargetType="{x:Type Button}">
-        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Background" Value="{DynamicResource SecundaryBackgroundColor}"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Height" Value="25"/>
@@ -17,7 +17,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{DynamicResource SecundaryBackgroundColor}"/>
+                            <Setter Property="Background" Value="{DynamicResource ButtonPrimaryColor}"/>
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
@@ -48,9 +48,9 @@
                     <Border x:Name="border" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
                         <Viewbox Height="20" Width="20" Margin="0 6 0 0" Stretch="UniformToFill">
                             <Canvas Height="512" Width="512">
-                                <Path x:Name="ico" Data="m32 0h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource PrimaryGrayColor}" Margin="0 0 0 0"/>
-                                <Path x:Name="ico1" Data="m32 128h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource PrimaryGrayColor}" Margin="0 20 0 0"/>
-                                <Path x:Name="ico2" Data="m32 256h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource PrimaryGrayColor}" Margin="0 40 0 0"/>
+                                <Path x:Name="ico" Data="m32 0h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource IconColor}" Margin="0 0 0 0"/>
+                                <Path x:Name="ico1" Data="m32 128h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource IconColor}" Margin="0 20 0 0"/>
+                                <Path x:Name="ico2" Data="m32 256h448c17.671875 0 32 14.328125 32 32s-14.328125 32-32 32h-448c-17.671875 0-32-14.328125-32-32s14.328125-32 32-32zm0 0" Fill="{DynamicResource IconColor}" Margin="0 40 0 0"/>
                             </Canvas>
                         </Viewbox>
                     </Border>
@@ -76,7 +76,7 @@
     <!-- Start: VerticalMenuStyle -->
     <Style x:Key="MenuRadioButtonStyle" TargetType="{x:Type RadioButton}">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryGrayColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource IconColor}"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="FontWeight" Value="Normal"/>
         <Setter Property="FontSize" Value="15"/>
@@ -98,7 +98,7 @@
                             <Rectangle Name="Indicator" HorizontalAlignment="Left" Width="4" Height="40" VerticalAlignment="Center" RadiusX="2" RadiusY="2"/>
 
                             <!-- Icon -->
-                            <Path x:Name="Icon" Data="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}" Height="24" Width="24" Stretch="None" Fill="{DynamicResource PrimaryGrayColor}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
+                            <Path x:Name="Icon" Data="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}}" Height="24" Width="24" Stretch="None" Fill="{DynamicResource IconColor}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 5 0"/>
 
                             <!-- Text -->
                             <TextBlock x:Name="txtName" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="12 0 0 0"
@@ -116,11 +116,11 @@
                             <Setter TargetName="Indicator" Property="Height" Value="20"/>-->
                         </Trigger>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="Icon" Property="Fill" Value="{DynamicResource PrimaryColor}"/>
-                            <Setter TargetName="Indicator" Property="Fill" Value="{DynamicResource PrimaryColor}"/>
+                            <Setter TargetName="Icon" Property="Fill" Value="{DynamicResource ActionIconColor}"/>
+                            <Setter TargetName="Indicator" Property="Fill" Value="{DynamicResource ActionIconColor}"/>
                             <Setter TargetName="Indicator" Property="Height" Value="20"/>
-                            <Setter TargetName="btnSelected" Property="Background" Value="{DynamicResource SecundaryGrayColor}"/>
-                            <Setter TargetName="txtName" Property="Foreground" Value="{DynamicResource PrimaryColor}"/>
+                            <Setter TargetName="btnSelected" Property="Background" Value="{DynamicResource ButtonPrimaryColor}"/>
+                            <Setter TargetName="txtName" Property="Foreground" Value="{DynamicResource ActionIconColor}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -132,25 +132,26 @@
     <Style x:Key="TittleText" TargetType="TextBlock">
         <Setter Property="FontSize" Value="36"/>
         <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Foreground" Value="{DynamicResource PrimaryColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextTernaryColor}"/>
     </Style>
 
 
     <Style x:Key="NormalText" TargetType="TextBlock">
         <Setter Property="FontSize" Value="16"/>
         <Setter Property="FontWeight" Value="Normal"/>
-        <Setter Property="Foreground" Value="{DynamicResource TextSecundaryColor}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextPrimaryColor}"/>
         <Setter Property="LineHeight" Value="28"/>
         <Setter Property="TextWrapping" Value="Wrap"/>
         
     </Style>
 
     <Style x:Key="RoundedButton" TargetType="Button">
-        <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+        <Setter Property="Background" Value="{DynamicResource ButtonPrimaryColor}"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Cursor" Value="Hand"/>
-        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontWeight" Value="Medium"/>
         <Setter Property="FontSize" Value="50"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -159,10 +160,10 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource SecundaryColor}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ButtonHoverColor}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{DynamicResource PrimaryColor}"/>
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource ButtonPrimaryColor}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -171,50 +172,111 @@
 
     </Style>
 
-    <Style x:Name="Hint" TargetType="TextBlock">
+    <Style x:Key="Hint" TargetType="TextBlock">
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="Foreground" Value="#acb0af"/>
 
     </Style>
 
-    <Style x:Name="TextBoxR" TargetType="TextBox">
-        <Setter Property="Padding" Value="7"/>
-        <Setter Property="Margin" Value="5"/>
-        <Setter Property="Foreground" Value="#000"/>
-        <Setter Property="FontSize" Value="20"/>
-        <Setter Property="MinHeight" Value="20"/>
-        <Setter Property="MinWidth" Value="250"/>
-        <Setter Property="FontWeight" Value="Bold" />
+    <Style x:Key="TextBoxR" TargetType="{x:Type TextBox}">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBox}">
-                    <Border x:Name="border"
-                            CornerRadius="10"
-                            BorderBrush="#000"
-                            BorderThickness="2"
-                            Background="#fff">
+                    <Border CornerRadius="20"
+                            Background="{DynamicResource PrimaryGrayColor}">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                                     FontSize="32"
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     Padding="5"
+                                     Foreground="{DynamicResource TextSecundaryColor}"
+                                     x:Name="Searchbox"/>
+
+                            <TextBlock IsHitTestVisible="False"
+                                       Text="Type Here"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="32"
+                                       Foreground="DarkGray"
+                                       Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text,ElementName= Searchbox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                                
+                            </TextBlock>
+                            
+                        </Grid>
                         
-                    <ScrollViewer x:Name="PART_ContentHost"
-                                  Focusable="false"
-                                  HorizontalScrollBarVisibility="Hidden"
-                                  VerticalScrollBarVisibility="Hidden"/>
                     </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="Red"/>
-                            <Setter Property="Foreground" Value="Red" />
-                            <Setter Property="FontWeight" Value="Bold" />
-                        </Trigger>
-                        <Trigger Property="IsFocused" Value="true">
-                            <Setter Property="Foreground" Value="Blue" />
-                            <Setter Property="BorderBrush" TargetName="border" Value="Blue"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        
     </Style>
-    
-    
-    
+
+
+    <Style x:Key="SearchR" TargetType="{x:Type TextBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="20"
+                            Background="{DynamicResource PrimaryGrayColor}">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                                     FontSize="32"
+                                     Text="{TemplateBinding Text}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     Padding="5"
+                                     Foreground="#cfcfcf"
+                                     x:Name="Searchbox"/>
+
+                            <TextBlock IsHitTestVisible="False"
+                                       Text="Search"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="32"
+                                       Foreground="DarkGray"
+                                       Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text,ElementName= Searchbox}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+
+                            </TextBlock>
+
+                        </Grid>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+
+
 </ResourceDictionary>

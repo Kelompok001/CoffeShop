@@ -26,6 +26,9 @@ namespace CoffeShop.Pages
             InitializeComponent();
         }
 
-        
+        private void OrderClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new SoundsPage();
+        }
     }
 }

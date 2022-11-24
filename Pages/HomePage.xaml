@@ -56,10 +56,20 @@
 
         <Path Data="{DynamicResource Logo}" Margin="50 -1500 0 0" Stretch="Fill" Fill="{DynamicResource PrimaryColor}" Width="100" Height="90" HorizontalAlignment="Left"/>
 
-        
 
+        <Button
+                    Style="{DynamicResource RoundedButton}"
+                    Width="252"
+                    Height="76"
+                    Content="Order"
+                    Margin="750,-1050,0,0" Click="OrderClick"/>
 
-
+        <Frame x:Name="Main"
+                Width="1500"
+                Height="950"
+                Margin="0,-1050,0,0">
+            
+        </Frame>
 
     </StackPanel>
 
