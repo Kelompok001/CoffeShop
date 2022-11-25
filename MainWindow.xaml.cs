@@ -29,7 +29,7 @@ namespace CoffeShop
 
         private void OrderClick(object sender, RoutedEventArgs e)
         {
-            Main.Content = new SoundsPage();
+            Main.Content = new DataPage();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

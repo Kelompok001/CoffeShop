@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5DAAE426-967A-4BDC-8793-3B9DBF260967}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UIKitTutorials</RootNamespace>
-    <AssemblyName>UIKitTutorials</AssemblyName>
+    <RootNamespace>CoffeShop</RootNamespace>
+    <AssemblyName>CoffeShop</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,6 +35,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialDesignColors, Version=2.0.9.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
@@ -79,11 +83,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\HomePage.xaml">
+    <Page Include="Pages\All.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\NotesPage.xaml">
+    <Page Include="Pages\Food.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\CoffePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NonCoffe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -91,7 +107,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\SoundsPage.xaml">
+    <Page Include="Pages\DataPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Snack.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,17 +125,29 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
+    <Compile Include="Pages\All.xaml.cs">
+      <DependentUpon>All.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\NotesPage.xaml.cs">
-      <DependentUpon>NotesPage.xaml</DependentUpon>
+    <Compile Include="Pages\Food.xaml.cs">
+      <DependentUpon>Food.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CoffePage.xaml.cs">
+      <DependentUpon>CoffePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonCoffe.xaml.cs">
+      <DependentUpon>NonCoffe.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PaymentPage.xaml.cs">
       <DependentUpon>PaymentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\SoundsPage.xaml.cs">
-      <DependentUpon>SoundsPage.xaml</DependentUpon>
+    <Compile Include="Pages\DataPage.xaml.cs">
+      <DependentUpon>DataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Snack.xaml.cs">
+      <DependentUpon>Snack.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -153,7 +185,14 @@
     <Resource Include="Assets\Images\barista.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Logo.ico" />
+    <Resource Include="Assets\Avatars\ava1.png" />
+    <Resource Include="Assets\Images\Gambar kopi ordered.png" />
+    <Resource Include="Assets\Images\Espresso.png" />
     <Content Include="Assets\Images\Group.svg" />
+    <Content Include="Assets\Images\Home.svg" />
+    <Content Include="Assets\Images\Menu icon.svg" />
+    <Content Include="Assets\Images\Suarch icon.svg" />
     <Resource Include="Assets\Images\LogIm.png" />
     <Resource Include="Assets\Images\kopi_1.png" />
     <Resource Include="Assets\Images\kopi_2.png" />
