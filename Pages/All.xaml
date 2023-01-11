@@ -8,7 +8,218 @@
       d:DesignHeight="647" d:DesignWidth="1092"
       Title="All">
 
-    <Grid Background="Yellow">
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+
+
+        <StackPanel>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="-690,30,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   ><Run Text="Frappuchino"/></TextBlock>
+                        <TextBlock Text="Rp25.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+                        <Button x:Name="Buyfrappuchino" Content="Buy" Width="93" Margin="100,0,0,0" Click="FrappuchinoClk"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\frappuchino.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="-690,30,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Latte"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp28.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\Latte.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="30,-990,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Espresso"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp20.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+                        <Button Content="Button" Click="EspressoClk"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\Espresso.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="750,-990,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Mochacino"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp22.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+                        <Button Content="Button" Click="MocachinoClk"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\mochacino.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="30,-310,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Americano"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp22.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\americano.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="750,-315,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Machiatto"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp25.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\machiatto.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+            <Button Content="Button"/>
+
+        </StackPanel>
         
-    </Grid>
+        
+
+
+    </Border>
 </Page>
