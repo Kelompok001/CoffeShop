@@ -250,10 +250,16 @@
     <Resource Include="Assets\Images\Espresso.png" />
     <Resource Include="Assets\Images\frappuchino.png" />
     <Resource Include="Assets\Images\americano.png" />
+    <Resource Include="Assets\Images\bakso.png" />
+    <Resource Include="Assets\Images\bread.png" />
+    <Resource Include="Assets\Images\burger.png" />
+    <Resource Include="Assets\Images\cake.png" />
+    <Resource Include="Assets\Images\dimsum.png" />
     <Content Include="Assets\Images\Group.svg" />
     <Content Include="Assets\Images\Home.svg" />
     <Resource Include="Assets\Images\machiatto.png" />
     <Resource Include="Assets\Images\Latte.png" />
+    <Resource Include="Assets\Images\kentang.png" />
     <Content Include="Assets\Images\Menu icon.svg" />
     <Resource Include="Assets\Images\mochacino.png" />
     <Content Include="Assets\Images\Suarch icon.svg" />
