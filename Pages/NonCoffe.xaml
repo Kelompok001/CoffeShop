@@ -8,7 +8,210 @@
       d:DesignHeight="647" d:DesignWidth="1092"
       Title="NonCoffe">
 
-    <Grid Background="Brown">
-        
-    </Grid>
+    <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+
+
+        <StackPanel>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="-690,30,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   ><Run Text="Matcha"/></TextBlock>
+                        <TextBlock Text="Rp25.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\matcha.png"
+                               Margin="47,6,47,89"/>
+                    <RadioButton x:Name="radioButton" Content="Add" HorizontalAlignment="Left" Margin="226,249,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </Border>
+
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="-690,30,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Mocktail"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp18.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\mocktail.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="30,-990,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Taro"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp25.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\taro.png"
+                               Margin="55,-41,-19,75"/>
+                    <RadioButton x:Name="radioButton1" Content="Add" HorizontalAlignment="Left" Margin="223,249,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="750,-990,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Coklat"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp20.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\coklat.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="30,-310,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Mango Smoothies"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp22.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\mangga.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+            <Border Width="331"
+                    Height="312"
+                    Margin="750,-315,0,0"
+                    Background="White">
+
+
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="20"
+                                       RadiusY="20"
+                                       Rect="0,0,331,312"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel Margin="16,220,0,0">
+                        <TextBlock Text="Strawbeery Smoothies"
+                                   Foreground="{DynamicResource TextPrimaryColor}"
+                                   FontSize="28"
+                                   />
+                        <TextBlock Text="Rp25.000"
+                                   Foreground="{DynamicResource TextTernaryColor}"
+                                   FontSize="18" Height="27"/>
+
+                    </StackPanel>
+
+                    <Image Source="\Assets\Images\strawberry.png"
+                               Margin="0,-100,0,0"
+                               Height="193"
+                           Width="200"/>
+
+                </Grid>
+            </Border>
+
+        </StackPanel>
+
+
+    </Border>
 </Page>

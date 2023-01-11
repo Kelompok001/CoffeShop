@@ -244,6 +244,12 @@
     <Resource Include="Assets\Images\barista.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Images\coklat.png" />
+    <Resource Include="Assets\Images\mangga.png" />
+    <Resource Include="Assets\Images\matcha.png" />
+    <Resource Include="Assets\Images\mocktail.png" />
+    <Resource Include="Assets\Images\strawberry.png" />
+    <Resource Include="Assets\Images\taro.png" />
     <Resource Include="Logo.ico" />
     <Resource Include="Assets\Avatars\ava1.png" />
     <Resource Include="Assets\Images\Gambar kopi ordered.png" />
