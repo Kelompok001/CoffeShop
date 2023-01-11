@@ -35,14 +35,14 @@
                         <TextBlock Text="Rp25.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        
+                        <Button x:Name="Buyfrappuchino" Content="Buy" Width="93" Margin="100,0,0,0" Click="FrappuchinoClk"/>
+
                     </StackPanel>
 
                     <Image Source="\Assets\Images\frappuchino.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
-                    <RadioButton x:Name="radioButton" Content="Add" HorizontalAlignment="Left" Margin="226,249,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </Border>
@@ -103,6 +103,7 @@
                         <TextBlock Text="Rp20.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
+                        <Button Content="Button" Click="EspressoClk"/>
 
                     </StackPanel>
 
@@ -110,7 +111,6 @@
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
-                    <RadioButton x:Name="radioButton1" Content="Add" HorizontalAlignment="Left" Margin="223,249,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </Border>
@@ -137,6 +137,7 @@
                         <TextBlock Text="Rp22.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
+                        <Button Content="Button" Click="MocachinoClk"/>
 
                     </StackPanel>
 
@@ -213,6 +214,7 @@
 
                 </Grid>
             </Border>
+            <Button Content="Button"/>
 
         </StackPanel>
 

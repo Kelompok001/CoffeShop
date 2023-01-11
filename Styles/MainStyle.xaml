@@ -188,12 +188,13 @@
                             <Rectangle StrokeThickness="1"/>
                             <TextBox Margin="1"
                                      FontSize="32"
-                                     Text="{TemplateBinding Text}"
+                                     
                                      BorderThickness="0"
                                      Background="Transparent"
                                      VerticalAlignment="Center"
                                      Padding="5"
                                      Foreground="{DynamicResource TextSecundaryColor}"
+                                     Text="{TemplateBinding Text}"
                                      x:Name="Searchbox"/>
 
                             <TextBlock IsHitTestVisible="False"

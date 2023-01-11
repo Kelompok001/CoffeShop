@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +28,7 @@ namespace CoffeShop.Pages
             InitializeComponent();
         }
 
-
+        
         
         
 
@@ -63,5 +65,21 @@ namespace CoffeShop.Pages
         {
             PagesNavigation.Content = new Food();
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Content = new CoffePage();
+            welcome.Content = "Welcome " + Global.username;
+            number.Content =  Global.number;
+            Pesanan.Content = Global.Namaproduk;
+            Harga.Content = "Rp" + Global.harga;
+
+
+
+
+        }
+        
+
+       
     }
 }

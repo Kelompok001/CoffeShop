@@ -32,21 +32,25 @@
                            HorizontalAlignment="Left"
                            Style="{DynamicResource NormalText}"/>
 
-                <TextBox Margin="-450,-1210,0,0"
+                <TextBox x:Name="txtName"
+                         Margin="-450,-1210,0,0"
                          Width="709"
-                         Height="78"
-                         Style="{DynamicResource TextBoxR}"/>
+                         Height="78"/>
 
-                <TextBlock Text="Phone Number"
+                <TextBlock 
+                           
                            FontSize="32"
                            Margin="220,-550,0,0"
                            HorizontalAlignment="Left"
-                           Style="{DynamicResource NormalText}"/>
+                           Style="{DynamicResource NormalText}"
+                            Text="Phone Number"/>
 
-                <TextBox Margin="-450,-910,0,0"
+                <TextBox 
+                         x:Name="txtPhone"
+                         Margin="-450,-910,0,0"
                          Width="709"
                          Height="78"
-                         Style="{DynamicResource TextBoxR}"/>
+                                 />
 
 
                 <Button
@@ -56,15 +60,17 @@
                     Content="Make Order"
                     Margin="-485,-600,0,0" Click="MakeOrder"/>
 
-                <Frame x:Name="Nav"
-                        Width="1550"
-                        Height="869"
-                        Margin="50,-1080,0,0" Navigated="Nav_Navigated">
-                    
-                </Frame>
+
 
 
             </StackPanel>
+
+            <Frame x:Name="Nav"
+                        Width="1550"
+                        Height="869"
+                        Margin="50,-1080,0,0" Navigated="Nav_Navigated">
+
+            </Frame>
 
         </StackPanel>
 
