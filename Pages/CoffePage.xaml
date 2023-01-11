@@ -28,7 +28,7 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espresso"
+                        <TextBlock Text="Espres"
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
                                    />
