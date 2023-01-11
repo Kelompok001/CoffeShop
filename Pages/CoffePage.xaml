@@ -28,20 +28,21 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espres"
+                        <TextBlock
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
-                                   />
-                        <TextBlock Text="Rp20.000"
+                                   ><Run Text="Frappuchino"/></TextBlock>
+                        <TextBlock Text="Rp25.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
                         
                     </StackPanel>
 
-                    <Image Source="\Assets\Images\Espresso.png"
+                    <Image Source="\Assets\Images\frappuchino.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
+                    <RadioButton x:Name="radioButton" Content="Add" HorizontalAlignment="Left" Margin="226,249,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </Border>
@@ -62,17 +63,17 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espresso"
+                        <TextBlock Text="Latte"
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
                                    />
-                        <TextBlock Text="Rp20.000"
+                        <TextBlock Text="Rp28.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
 
                     </StackPanel>
 
-                    <Image Source="\Assets\Images\Espresso.png"
+                    <Image Source="\Assets\Images\Latte.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
@@ -109,6 +110,7 @@
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
+                    <RadioButton x:Name="radioButton1" Content="Add" HorizontalAlignment="Left" Margin="223,249,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </Border>
@@ -128,17 +130,17 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espresso"
+                        <TextBlock Text="Mochacino"
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
                                    />
-                        <TextBlock Text="Rp20.000"
+                        <TextBlock Text="Rp22.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
 
                     </StackPanel>
 
-                    <Image Source="\Assets\Images\Espresso.png"
+                    <Image Source="\Assets\Images\mochacino.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
@@ -161,17 +163,17 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espresso"
+                        <TextBlock Text="Americano"
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
                                    />
-                        <TextBlock Text="Rp20.000"
+                        <TextBlock Text="Rp22.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
 
                     </StackPanel>
 
-                    <Image Source="\Assets\Images\Espresso.png"
+                    <Image Source="\Assets\Images\americano.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
@@ -194,17 +196,17 @@
 
                 <Grid>
                     <StackPanel Margin="16,220,0,0">
-                        <TextBlock Text="Espresso"
+                        <TextBlock Text="Machiatto"
                                    Foreground="{DynamicResource TextPrimaryColor}"
                                    FontSize="28"
                                    />
-                        <TextBlock Text="Rp20.000"
+                        <TextBlock Text="Rp25.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
 
                     </StackPanel>
 
-                    <Image Source="\Assets\Images\Espresso.png"
+                    <Image Source="\Assets\Images\machiatto.png"
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>

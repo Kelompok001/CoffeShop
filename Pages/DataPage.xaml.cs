@@ -29,5 +29,10 @@ namespace CoffeShop.Pages
         {
             Nav.Content = new MenuPage();
         }
+
+        private void Nav_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

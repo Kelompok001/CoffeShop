@@ -59,7 +59,7 @@
                 <Frame x:Name="Nav"
                         Width="1550"
                         Height="869"
-                        Margin="50,-1080,0,0">
+                        Margin="50,-1080,0,0" Navigated="Nav_Navigated">
                     
                 </Frame>
 
