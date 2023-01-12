@@ -20,7 +20,7 @@ using System.Xml.Linq;
 namespace CoffeShop.Pages
 {
     /// <summary>
-    /// Lógica de interacción para NotesPage.xaml
+    
     /// </summary>
     public partial class CoffePage : Page
     {
@@ -32,6 +32,8 @@ namespace CoffeShop.Pages
         private void FrappuchinoClk(object sender, RoutedEventArgs e)
         {
             Mydb db = new Mydb();
+            
+           
 
             if (addKeranjang(Global.Namaproduk, Global.harga))
             {
@@ -78,9 +80,9 @@ namespace CoffeShop.Pages
 
             if (addKeranjang1(Global.Namaproduk, Global.harga))
             {
-                MessageBox.Show("Added to cart");
                 Global.Namaproduk = "Espresso";
                 Global.harga = 10000;
+                MessageBox.Show("Added to cart" );
             }
 
             else
@@ -121,6 +123,7 @@ namespace CoffeShop.Pages
                 MessageBox.Show("Added to cart");
                 Global.Namaproduk = "Mocachino";
                 Global.harga = 22000;
+
 
             }
 

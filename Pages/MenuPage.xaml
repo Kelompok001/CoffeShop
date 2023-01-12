@@ -9,7 +9,7 @@
       Title="DataPage" Loaded="Page_Loaded">
 
     <Grid Background="{DynamicResource SecundaryBackgroundColor}">
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="60"/>
@@ -207,25 +207,10 @@
                            Style="{DynamicResource NormalText}"
                            Name="cek1"/>
 
-                <StackPanel Orientation="Horizontal">
-
-                    <Label Content="espresso"
-                           FontSize="16"
-                           FontWeight="Medium"
-                           Margin="100,50,0,0"
-                           Name="Pesanan"/>
-
-                    <Label Content="Rp20.000"
-                           FontSize="16"
-                           FontWeight="Bold"
-                           Margin="0,50,0,0"
-                           Foreground="{DynamicResource TextTernaryColor}"
-                            Name="Harga"/>
-
-
-                </StackPanel>
+                <StackPanel Orientation="Horizontal"/>
 
                 <StackPanel>
+
 
                     <TextBlock Text="Total"
                                FontSize="20"
@@ -245,7 +230,7 @@
                             Content="Print Bill"
                             FontWeight="Medium"
                             FontSize="30"
-                            Style="{DynamicResource RoundedButton}"/>
+                            Style="{DynamicResource RoundedButton}" Click="printbll"/>
                 </StackPanel>
 
                 <StackPanel>
@@ -270,6 +255,9 @@
 
 
         </Grid>
+        <Frame x:Name="Navi"
+                        Margin="0,0,30,-48"  />
+
 
     </Grid>
 

@@ -77,5 +77,28 @@ namespace CoffeShop
 
             return commandState;
         }
+
+        public string AmbilData(string query, string colom, MySqlParameter[] parameters)
+        {
+            MySqlCommand command = new MySqlCommand(query, getConnection());
+
+            if (parameters != null)
+            {
+                command.Parameters.AddRange(parameters);
+            }
+
+            openConnection();
+
+            string dataTemp = "No Data";
+            MySqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                dataTemp = reader[colom].ToString();
+            }
+            closeConnection();
+
+            return dataTemp;
+        }
     }
 }

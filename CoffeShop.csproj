@@ -268,6 +268,7 @@
     <Resource Include="Assets\Images\kentang.png" />
     <Content Include="Assets\Images\Menu icon.svg" />
     <Resource Include="Assets\Images\mochacino.png" />
+    <Resource Include="Assets\Images\qr.png" />
     <Content Include="Assets\Images\Suarch icon.svg" />
     <Resource Include="Assets\Images\LogIm.png" />
     <Resource Include="Assets\Images\kopi_1.png" />

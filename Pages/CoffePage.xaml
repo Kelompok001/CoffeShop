@@ -111,6 +111,7 @@
                                Margin="0,-100,0,0"
                                Height="193"
                            Width="200"/>
+                    <Label Name="Tes1" Content="Label" HorizontalAlignment="Left" Margin="244,201,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </Border>

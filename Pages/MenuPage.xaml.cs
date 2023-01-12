@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CoffeShop.Pages;
+using MySql.Data.MySqlClient;
 
 namespace CoffeShop.Pages
 {
@@ -26,15 +27,17 @@ namespace CoffeShop.Pages
         public MenuPage()
         {
             InitializeComponent();
+
+            
         }
 
-        
-        
-        
 
-        
 
-        
+
+
+
+
+
 
         private void rdPayment_Click(object sender, RoutedEventArgs e)
         {
@@ -66,20 +69,40 @@ namespace CoffeShop.Pages
             PagesNavigation.Content = new Food();
         }
 
+
+
+        public string nfungsi(int product_id) {
+            Mydb db = new Mydb();
+            string query = "SELECT product_name FROM `product` WHERE product_id = 1;";
+            string colum = "product_name";
+            MySqlParameter[] parameters = new MySqlParameter[1];
+
+            parameters[0] = new MySqlParameter("@id", MySqlDbType.Int32);
+            parameters[0].Value = product_id;
+
+            return db.AmbilData(query,colum, parameters);
+        }
+
+        
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             PagesNavigation.Content = new CoffePage();
             welcome.Content = "Welcome " + Global.username;
             number.Content =  Global.number;
-            Pesanan.Content = Global.Namaproduk;
-            Harga.Content = "Rp" + Global.harga;
+            
 
+           
+            
 
+          
+            
 
 
         }
-        
 
-       
+        private void printbll(object sender, RoutedEventArgs e)
+        {
+            PagesNavigation.Navigate(new System.Uri("Pages/PaymentPage.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }
