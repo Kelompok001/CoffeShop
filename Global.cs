@@ -12,7 +12,16 @@ namespace CoffeShop
         public static string number;
         public static string Namaproduk;
         public static float harga;
-        
 
+        /*private string _productName;
+        public string ProductName
+        {
+            get { return _productName; }
+            set
+            {
+                _productName = value;
+                // Raise PropertyChanged event here if you're using MVVM
+            }
+        }*/
     }
 }
