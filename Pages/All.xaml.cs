@@ -54,7 +54,7 @@ namespace CoffeShop.Pages
         {
             Mydb db = new Mydb();
             int produk_id = 2;
-            string query = "INSERT INTO `keranjang`VALUES ('',@product_id);";
+            string query = "INSERT INTO `keranjang` (product_id) VALUES (@product_id);";
 
             MySqlParameter[] parameters = new MySqlParameter[1];
             parameters[0] = new MySqlParameter("@product_id", MySqlDbType.VarChar);

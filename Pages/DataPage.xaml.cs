@@ -35,7 +35,7 @@ namespace CoffeShop.Pages
             Mydb db = new Mydb();
 
             Global.username = txtName.Text;
-             Global.number = txtPhone.Text;
+            Global.number = txtPhone.Text;
 
 
             if (addGenre(Global.username, Global.number))
@@ -53,7 +53,7 @@ namespace CoffeShop.Pages
         {
             Mydb db = new Mydb();
 
-            string query = "INSERT INTO `customer`VALUES ('',@customer_name, @phone_number);";
+            string query = "INSERT INTO `customer` (customer_name, phone_number) VALUES (@customer_name, @phone_number);";
 
             MySqlParameter[] parameters = new MySqlParameter[2];
             parameters[0] = new MySqlParameter("@customer_name", MySqlDbType.VarChar);
