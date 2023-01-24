@@ -35,7 +35,8 @@
                         <TextBlock Text="Rp25.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        <Button x:Name="Buyfrappuchino" Content="Buy" Width="93" Margin="100,0,0,0" Click="FrappuchinoClk"/>
+                        <Button x:Name="Buyfrappuchino" Content="Buy" Width="93" Margin="100,-10,0,0" Click="FrappuchinoClk"
+                                 Style="{DynamicResource RoundedButton}" FontSize="20"/>
 
                     </StackPanel>
 
@@ -103,7 +104,8 @@
                         <TextBlock Text="Rp20.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        <Button Content="Buy" Width="93" Margin="100,0,0,0" Click="EspressoClk"/>
+                        <Button Content="Buy" Click="EspressoClk" Style="{DynamicResource RoundedButton}" FontSize="20"
+                                Width="93" Margin="150,-10,0,0" />
 
                     </StackPanel>
 
@@ -138,7 +140,8 @@
                         <TextBlock Text="Rp22.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        <Button Content="Buy" Width="93" Margin="100,0,0,0" Click="MocachinoClk"/>
+                        <Button Content="Buy" Style="{DynamicResource RoundedButton}" FontSize="20"
+                                Width="93" Margin="150,-10,0,0" Click="MocachinoClk"/>
 
                     </StackPanel>
 

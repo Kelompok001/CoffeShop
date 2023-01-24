@@ -23,6 +23,7 @@ namespace CoffeShop.Pages
         public Pesanan()
         {
             InitializeComponent();
+            
         }
 
         
@@ -30,15 +31,9 @@ namespace CoffeShop.Pages
         {
 
             NamaPesanan.Content = Global.Namaproduk;
-            HargaPesanan.Content = Global.harga;
-
-
-
-
-
-
-
-
+            HargaPesanan.Content = "Rp" + Global.harga;
+            Total.Content = "Rp" + Global.harga;
+            
 
         }
     }

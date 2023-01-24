@@ -35,7 +35,9 @@
                 <TextBox x:Name="txtName"
                          Margin="-450,-1210,0,0"
                          Width="709"
-                         Height="78"/>
+                         Height="78"
+                         FontSize="45"
+                         TextAlignment="Left"/>
 
                 <TextBlock 
                            
@@ -50,7 +52,8 @@
                          Margin="-450,-910,0,0"
                          Width="709"
                          Height="78"
-                                 />
+                         FontSize="45"
+                        TextAlignment="Left"/>
 
 
                 <Button
@@ -68,7 +71,7 @@
             <Frame x:Name="Nav"
                         Width="1550"
                         Height="869"
-                        Margin="50,-1080,0,0" Navigated="Nav_Navigated">
+                        Margin="-10,-1200,0,0" Navigated="Nav_Navigated">
 
             </Frame>
 

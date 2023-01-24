@@ -51,7 +51,8 @@
                            FontSize="20"
                            FontWeight="Bold"
                            Foreground="{DynamicResource TextTernaryColor}"
-                           Margin="255,340,0,0"/>
+                           Margin="255,315,0,0"
+                           Name="Total"/>
 
             <Label Content="Rp0"
                            FontSize="20"
