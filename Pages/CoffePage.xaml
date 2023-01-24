@@ -103,7 +103,7 @@
                         <TextBlock Text="Rp20.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        <Button Content="Button" Click="EspressoClk"/>
+                        <Button Content="Buy" Width="93" Margin="100,0,0,0" Click="EspressoClk"/>
 
                     </StackPanel>
 
@@ -138,7 +138,7 @@
                         <TextBlock Text="Rp22.000"
                                    Foreground="{DynamicResource TextTernaryColor}"
                                    FontSize="18" Height="27"/>
-                        <Button Content="Button" Click="MocachinoClk"/>
+                        <Button Content="Buy" Width="93" Margin="100,0,0,0" Click="MocachinoClk"/>
 
                     </StackPanel>
 
